@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <input type="text" class="input" placeholder="Enter domain name here..." />
+    <div class="input-group">
+      <button class="btn btn--accent">Search</button>
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="../images/sprite.svg#wordpress"></use>
+        </svg>
+      </span>
+      <input type="text" class="input" placeholder="Enter domain name here..." />
+    </div>
   </body>
 </html>
+<!-- Bottom Up Approach: Components first allow me to add compenents anywhere-->
+<!-- Added span element with icon as example -->
+<!-- Tiop Down Approach: Page first can cause layout issues -->
