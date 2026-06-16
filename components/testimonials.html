@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials Componenet</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="block">
+      <div class="container">
+        <div class="card testimonial grid grid--1x2">
+          <div class="testimonial__image"></div>
+          <img src="../images/testimonial.jpg" alt="Customer" />
+          <span class="icon-container icon-container-accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="../images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">testimonial</p>
+          <footer class="quote__footer">
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="../images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__autor">Name</h3>
+                <p class="media__description quote__organization">Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+  </body>
+</html>
