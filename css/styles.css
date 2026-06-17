@@ -241,6 +241,11 @@ a {
   color: #fff;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -464,4 +469,15 @@ a {
   .testimonial .icon-container {
     right: -20px;
   }
+}
+
+/* Callouts */
+.callout {
+  padding: 4rem 3rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
 }
