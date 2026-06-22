@@ -624,3 +624,26 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Hero Section */
+.hero__heading {
+  margin-top: 0;
+}
+
+.hero__tagline {
+  font-size: 2.4rem;
+  color: #b3c0ce;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
