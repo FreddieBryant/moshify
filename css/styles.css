@@ -647,3 +647,47 @@ a {
     align-self: center;
   }
 }
+
+/* Domain Block Base */
+.block-domain {
+  background-color: var(--color-secondary);
+}
+
+.block-domain .block__header h2 {
+  color: white;
+}
+
+/* Domain Form & Input */
+.domain__form {
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group .input {
+  flex-grow: 1;
+  border: 0;
+  padding: 1.5rem 2rem;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 1.5rem 3rem;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+  .domain__form {
+    width: 90%;
+  }
+}
