@@ -737,3 +737,28 @@ a {
     transform: none;
   }
 }
+
+/* Features Block Component */
+.block-features h2 {
+  margin-bottom: 2rem;
+}
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature__heading {
+  margin: 1rem 0 2rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+/* Desktop Alternating Flip Effect */
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2; /* Pushes text to the right side on every second feature row */
+  }
+}
