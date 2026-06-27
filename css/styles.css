@@ -762,3 +762,37 @@ a {
     order: 2; /* Pushes text to the right side on every second feature row */
   }
 }
+
+/* Showcase Block */
+
+.block-showcase {
+  padding: 8rem 0;
+}
+
+.block-showcase__image > img {
+  /* Makes the image responsive on smaller mobile viewports */
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  /* Moves the text/content to the right column, leaving image on the left */
+  .block-showcase .block__content {
+    justify-self: start;
+    align-self: center;
+  }
+
+  .block-showcase__image {
+    max-width: 70rem;
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    /* Prevents image from shrinking or causing horizontal scrolling on wide screens */
+    width: auto;
+    max-width: none;
+  }
+}
