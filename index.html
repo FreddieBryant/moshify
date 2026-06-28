@@ -100,5 +100,220 @@
         </div>
       </div>
     </section>
+
+    <!-- Lesson 33: Features Block Component -->
+    <section class="block container block-features">
+      <header class="block__header">
+        <h2>Host on the Cloud to Keep Growing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quasi!</p>
+      </header>
+
+      <!-- Feature Row 1: Text Left, Image Right -->
+      <article class="grid grid--1-cols grid--2-cols feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto repellendus ab
+            laboriosam? Omnis natus, animi necessitatibus eveniet mollitia laboriosam.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
+          <source type="image/png" srcset="images/easy.png 1x, images/easy@2x.png 2x" />
+          <img class="feature__image" src="images/easy.png" alt="Easy to use interface" />
+        </picture>
+      </article>
+
+      <!-- Feature Row 2: Image Left, Text Right -->
+      <article class="grid grid--1-cols grid--2-cols feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#fast"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Lightning Fast Speed</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto repellendus ab
+            laboriosam? Omnis natus, animi necessitatibus eveniet mollitia laboriosam.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x" />
+          <source type="image/png" srcset="images/fast.png 1x, images/fast@2x.png 2x" />
+          <img class="feature__image" src="images/fast.png" alt="Fast hosting speed chart" />
+        </picture>
+      </article>
+    </section>
+    <!-- ... Your existing sections and content are up here ... -->
+
+    <!-- PASTE THE SHOWCASE BLOCK RIGHT HERE -->
+    <section class="block block--dark block--skewed-left block-showcase">
+      <header class="block__header">
+        <h2>Service Hosting Made Easy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolorem.</p>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image">
+          <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
+          <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
+          <img src="images/ipad.png" alt="" />
+        </picture>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#easy"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Deployment</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde eius iure
+                  modi quo error hic rem corrupti architecto ratione!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#computer"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Real-time Logs</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde eius iure
+                  modi quo error hic rem corrupti architecto ratione!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#setting"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Secure Control Panel</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde eius iure
+                  modi quo error hic rem corrupti architecto ratione!
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. Testimonials Block Section -->
+    <section class="block" data-aos="fade-up">
+      <header class="block__header">
+        <h2>What Our Customers Are Saying</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, quasi.</p>
+      </header>
+      <div class="container">
+        <div class="card testimonial card--testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="A happy customer" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, judie, atque
+                recusandae aut dolor placeat error dism, consequuntur nisi!
+              </p>
+              <div class="media">
+                <div class="media__body">
+                  <h3 class="quote__author">John Smith</h3>
+                  <p class="quote__organization">ABC Company</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Block Section -->
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <!-- Section 1: Products Collapsible Column -->
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="footer__heading collapsible__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">WordPress Hosting</a></li>
+              <li><a href="#">VPS Hosting</a></li>
+              <li><a href="#">Cloud Hosting</a></li>
+              <li><a href="#">Domain Names</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 2: Company Collapsible Column -->
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="footer__heading collapsible__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 3: Support Collapsible Column -->
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="footer__heading collapsible__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="footer__brand footer__section">
+          <img src="images/logo.svg" alt="Moshify Logo" />
+          <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
