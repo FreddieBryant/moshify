@@ -830,3 +830,75 @@ a {
     margin-left: 6rem;
   }
 }
+
+/* Footer Block Layout */
+
+.footer {
+  background: #232323;
+  padding-top: 10rem;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  /* Restricts brand logo image width limits */
+  max-width: 240px;
+  width: 100%;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+  margin-top: 1rem;
+}
+
+/* Tablet & Large Desktop Query Layout Override */
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__section {
+    border: 0;
+    padding: 0;
+  }
+
+  /* Automatically forces the brand section to the far left position */
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .footer__brand .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+}
