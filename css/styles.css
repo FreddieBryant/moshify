@@ -388,6 +388,7 @@ a {
   /* Add these structural dimensions directly to your image wrapper class */
   width: 40px;
   height: 40px;
+  margin-top: 1rem;
 }
 
 /* Force the inner SVG vector paths to fit inside your 40px wrapper box */
