@@ -437,6 +437,7 @@ a {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 0;
+  padding-left: 0.6rem;
 }
 
 .quote__company {
@@ -445,23 +446,30 @@ a {
   font-style: normal;
 }
 
-/* 1. POSITION THE LINE: Slides the tight 24x12 rectangle line down next to John Smith's name */
+/* 1. KEEP CONTAINER SMALL: Prevents the parent flex column from pushing the text block rightward */
 .quote .media__image {
-  margin-top: 1.6rem; /* Physically pushes the line from the ceiling down to the text base */
-  width: 40px; /* Enforces Mosh's exact horizontal width bounds */
-  height: 6px; /* Enforces Mosh's exact line thickness */
+  margin-top: 1.6rem;
+  margin-right: 0.8rem; /* Keeps the spacing gap tight to John Smith */
+  width: 30px; /* Shrink this box back down so the text column moves left! */
+  height: 6px;
 }
 
-/* 2. SCALE THE VECTOR: Force the inner SVG code to fill your 40px by 6px container block */
+/* 2. OVERFLOW THE LINE: Force the actual SVG path to draw itself wider than its parent container box */
 .quote .media__image svg {
-  width: 100%;
+  width: 55px; /* STRETCH: Makes the actual visible teal line noticeably longer */
   height: 100%;
   display: block;
+  overflow: visible; /* Magic key: Allows the extended line to draw outside its 30px flex wall */
 }
 
-/* 3. CHANGE ONLY THE LINE COLOR: Re-define the variable specifically inside the line box */
+/* 3. CHANGE ONLY THE LINE COLOR */
 .quote__line {
   color: #00d9ff;
+}
+
+/* Pulls the entire footer block leftward to line up with the paragraph text above it */
+.quote .media {
+  margin-left: -2.5rem; /* Adjust this number (e.g., -2rem or -3rem) until it lines up perfectly! */
 }
 
 /* Grids */
