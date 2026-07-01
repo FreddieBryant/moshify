@@ -433,17 +433,19 @@ a {
 }
 
 .quote__author {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
   padding-left: 0.6rem;
 }
 
 .quote__company {
-  color: #a0a0a0;
-  font-size: 1.6rem;
+  color: var(--color-headings);
+  font-size: 2rem;
   font-style: normal;
+  opacity: 0.4;
+  padding-left: 0.6rem;
 }
 
 /* 1. KEEP CONTAINER SMALL: Prevents the parent flex column from pushing the text block rightward */
@@ -470,6 +472,20 @@ a {
 /* Pulls the entire footer block leftward to line up with the paragraph text above it */
 .quote .media {
   margin-left: -2.5rem; /* Adjust this number (e.g., -2rem or -3rem) until it lines up perfectly! */
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .quote__company {
+    font-size: 1.6rem;
+  }
 }
 
 /* Grids */
