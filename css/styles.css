@@ -445,6 +445,25 @@ a {
   font-style: normal;
 }
 
+/* 1. POSITION THE LINE: Slides the tight 24x12 rectangle line down next to John Smith's name */
+.quote .media__image {
+  margin-top: 1.6rem; /* Physically pushes the line from the ceiling down to the text base */
+  width: 40px; /* Enforces Mosh's exact horizontal width bounds */
+  height: 6px; /* Enforces Mosh's exact line thickness */
+}
+
+/* 2. SCALE THE VECTOR: Force the inner SVG code to fill your 40px by 6px container block */
+.quote .media__image svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 3. CHANGE ONLY THE LINE COLOR: Re-define the variable specifically inside the line box */
+.quote__line {
+  color: #00d9ff;
+}
+
 /* Grids */
 .grid {
   display: grid;
