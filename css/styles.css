@@ -433,45 +433,27 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
-  padding-left: 0.6rem;
 }
 
-.quote__company {
+.quote__organization {
   color: var(--color-headings);
-  font-size: 2rem;
   font-style: normal;
   opacity: 0.4;
-  padding-left: 0.6rem;
 }
 
-/* 1. KEEP CONTAINER SMALL: Prevents the parent flex column from pushing the text block rightward */
+/* 1. POSITION THE ROW COLUMN: Align the empty container box next to the author text */
 .quote .media__image {
-  margin-top: 1.6rem;
-  margin-right: 0.8rem; /* Keeps the spacing gap tight to John Smith */
-  width: 30px; /* Shrink this box back down so the text column moves left! */
-  height: 6px;
+  margin-top: 1.4rem; /* Smoothly drives the border line down to the text baseline */
+  margin-right: 1.5rem; /* Establishes a perfect spacing gap next to John Smith's name */
 }
 
-/* 2. OVERFLOW THE LINE: Force the actual SVG path to draw itself wider than its parent container box */
-.quote .media__image svg {
-  width: 55px; /* STRETCH: Makes the actual visible teal line noticeably longer */
-  height: 100%;
-  display: block;
-  overflow: visible; /* Magic key: Allows the extended line to draw outside its 30px flex wall */
-}
-
-/* 3. CHANGE ONLY THE LINE COLOR */
+/* 2. BUILD THE TEAL LINE ENTIRELY IN CSS: Bypasses the broken SVG sprite completely */
 .quote__line {
-  color: #00d9ff;
-}
-
-/* Pulls the entire footer block leftward to line up with the paragraph text above it */
-.quote .media {
-  margin-left: -2.5rem; /* Adjust this number (e.g., -2rem or -3rem) until it lines up perfectly! */
+  width: 40px; /* Controls the exact horizontal length of the line */
+  border-bottom: 6px solid #00d9ff; /* Draws a flawless bright teal line at 6px thickness */
 }
 
 @media screen and (min-width: 1024px) {
@@ -483,7 +465,7 @@ a {
     font-size: 2.4rem;
   }
 
-  .quote__company {
+  .quote__organization {
     font-size: 1.6rem;
   }
 }
