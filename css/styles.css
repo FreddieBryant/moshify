@@ -546,11 +546,16 @@ a {
 .callout__heading {
   color: #fff;
   margin-top: 0;
+  font-size: 3rem;
 }
 
 .callout .btn {
-  justify-self: left;
+  justify-self: center;
   align-self: center;
+}
+
+.callout__content {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -561,6 +566,10 @@ a {
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
+  }
+
+  .callout__content {
+    text-align: left;
   }
 }
 
