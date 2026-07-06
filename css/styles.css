@@ -578,6 +578,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .collapsible__heading {
@@ -587,7 +588,7 @@ a {
 
 .collapsible__chevron {
   transform: rotate(-90deg);
-  transition: transform 0.3;
+  transition: transform 0.3s; /* Fixed the missing 's' unit here */
 }
 
 .collapsible__content {
@@ -603,7 +604,7 @@ a {
 }
 
 .collapsible--expanded .collapsible__content {
-  max-height: 100vh;
+  max-height: 15rem;
   opacity: 1;
 }
 
