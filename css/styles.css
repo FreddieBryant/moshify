@@ -59,6 +59,7 @@ p {
   margin-top: 0;
 }
 
+/* Layout Utilities */
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -315,7 +316,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 2rem;
+  padding: 2rem 3rem;
 }
 
 .card--primary .card__header {
@@ -617,7 +618,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 
 .block__header {
