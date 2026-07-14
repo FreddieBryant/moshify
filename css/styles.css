@@ -672,7 +672,10 @@ a {
   color: #fff;
 }
 
+/* CHANGED ONLY THIS: Added white color and font size to support the text symbol */
 .nav__toggler {
+  color: #fff;
+  font-size: 3.5rem;
   opacity: 0.5;
   cursor: pointer;
   transition: box-shadow 0.15s;
@@ -693,7 +696,7 @@ a {
   .nav__toggler {
     display: none;
   }
-
+  
   .nav__list {
     width: auto;
     display: flex;
@@ -701,7 +704,7 @@ a {
     max-height: 100%;
     opacity: 1;
   }
-
+  
   .nav__item {
     border: 0;
   }
