@@ -672,13 +672,26 @@ a {
   color: #fff;
 }
 
-/* CHANGED ONLY THIS: Added white color and font size to support the text symbol */
 .nav__toggler {
   color: #fff;
   font-size: 3.5rem;
   opacity: 0.5;
   cursor: pointer;
   transition: box-shadow 0.15s;
+}
+
+/* 1. CLOSED STATE: Ensure the nav list links drop cleanly when collapsed */
+.nav .nav__list {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* 2. EXPANDED STATE MAP: Forces ONLY the menu list to animate open */
+.nav.collapsible--expanded .nav__list {
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -709,6 +722,7 @@ a {
     border: 0;
   }
 }
+
 
 /* Grids */
 .grid {
