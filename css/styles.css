@@ -658,6 +658,10 @@ a {
   align-items: center;
 }
 
+.nav__list {
+  width: 100%;
+}
+
 .nav__item {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
