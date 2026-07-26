@@ -660,6 +660,7 @@ a {
 
 .nav__list {
   width: 100%;
+  margin: 0;
 }
 
 .nav__item {
