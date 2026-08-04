@@ -798,7 +798,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .block-domain__prices {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 
