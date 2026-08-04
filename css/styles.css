@@ -213,6 +213,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-transform: uppercase;
   white-space: nowrap;
@@ -775,6 +776,17 @@ a {
 /* Domain Block Base */
 .block-domain {
   background-color: var(--color-secondary);
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem 0;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
 }
 
 .block-domain .block__header h2 {
